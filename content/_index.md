@@ -15,25 +15,25 @@ title: harrow
 
 Format standard input to standard output:
 
-```
+```sh
 cat schema.sql | harrow
 ```
 
 Format named files, printing each to standard output:
 
-```
+```text
 harrow schema.sql migrations.sql
 ```
 
 Rewrite changed files in place:
 
-```
+```text
 harrow --write *.sql
 ```
 
 List the paths whose formatting would change (nothing is written):
 
-```
+```text
 harrow --list *.sql
 ```
 
@@ -53,6 +53,6 @@ harrow --list *.sql
 
 ## Install
 
-```
+```sh
 go install github.com/sqlrest/harrow/cmd/harrow@latest
 ```
